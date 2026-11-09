@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Organize your daily learning activities.</p>
+        </header>
+
+        <!-- Statistics -->
+        <section class="statistics">
+
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining</h3>
+                <p id="remainingTasks">0</p>
+            </div>
+
+        </section>
+
+        <!-- Add Task -->
+        <section class="task-form">
+
+            <h2>Add New Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+            >
+
+            <select id="priorityInput">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <button id="addButton">Add Task</button>
+
+        </section>
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your tasks..."
+            >
+
+            <select id="filterInput">
+                <option value="All">All Tasks</option>
+                <option value="Completed">Completed</option>
+                <option value="Pending">Pending</option>
+            </select>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <div id="taskList">
+                <!-- JavaScript displays tasks here -->
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Keep learning. Keep improving!</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
